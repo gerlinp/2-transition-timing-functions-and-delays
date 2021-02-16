@@ -4,8 +4,7 @@
 
 .photo-overlay {
 	opacity: 0;
-	transition-property: opacity;
-	transition-duration: .5s;
+	transition:  all .5s;
 }
 .photo-overlay:hover {
 	opacity: 1;
@@ -17,9 +16,8 @@
 
 .button {
 	opacity: 0;
-	transition-property: opacity, background, box-shadow;
-	transition-duration: .5s;
-	transition-delay: .2s, .3s, 0s;
+	transition: opacity .3s ease-out .2s, background .4s ease-out .3s, box-shadow .5s .0s;
+	transition-timing-function: ease-out;
 }
 
 .button:hover {
